@@ -1,0 +1,7 @@
+kubectl create -f reSet-definition.yaml -n ckad
+kubectl replace -f reSet-definition.yaml -n ckad
+
+kubectl get replicaset -n cka
+kubectl scale --replicas=6 -f reSet-definition.yaml -n ckad
+
+kubctl delete replicaset myapp-replicaset ( also deletes all underlying pods )
