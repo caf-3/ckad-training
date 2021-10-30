@@ -1,0 +1,11 @@
+kubectl create serviceaccount dashboard-sa
+
+kubectl get serviceaccount
+
+kubectl describe serviceaccount dashboard-sa
+
+kubectl describe secret dashboard-sa-token-r47dj
+
+kubectl exec -it myapp-rc-8grkk ls /var/run/secrets/kubernetes.io/serviceaccount
+
+kubectl exec -it myapp-rc-8grkk cat /var/run/secrets/kubernetes.io/serviceaccount/token
