@@ -1,0 +1,7 @@
+kubectl taint nodes node-name key=value:taint-effect
+
+taint-effects: NoSchedule | PreferNoSchedule | NoExecute
+
+kubectl taint nodes node1 app=blue:NoSchedule
+
+kubectl describe node node-namecl | grep Taint
