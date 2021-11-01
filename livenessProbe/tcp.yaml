@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp-pod
+  labels:
+    apps: myapp
+    type: front-end
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      livenessProbe:
+        tcpSocket:
+          port: 3306
