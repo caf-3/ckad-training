@@ -12,5 +12,5 @@ spec:
   tolerations:
     - key: "app"
       operator: "Equal"
-      valule: "blue"
+      value: "blue"
       effect: "NoSchedule"
