@@ -13,4 +13,4 @@ spec:
         exec:
           command:
             - cat
-            - /a
+            - /app/is_healthy
