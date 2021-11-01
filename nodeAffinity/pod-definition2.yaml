@@ -16,4 +16,5 @@ spec:
           - matchExpressions:
               - key: size
                 operator: NotIn
-                values: Small
+                values: 
+                - Small
