@@ -4,7 +4,7 @@ metadata:
   name: job-pod
 spec:
   completions: 3
-  pararelism: 3
+  parallelism: 3
   template:
     spec: 
       containers:
