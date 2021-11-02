@@ -1,0 +1,13 @@
+kubectl create deployment nginx --image=nginx:1.16
+
+kubectl rollout status deployment nginx
+
+kubectl rollout history deployment nginx --revision=1
+
+kubectl set image deployment nginx nginx=nginx:1.17 --record
+
+kubectl rollout status deployment/deployment-name
+
+kubectl rollout history deployment/deployment-name
+
+kubectl rollout undo deployment/deployment-name
