@@ -3,6 +3,7 @@ kind: Job
 metadata: 
   name: job-pod
 spec:
+  completions: 3
   template:
     spec: 
       containers:

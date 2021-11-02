@@ -3,6 +3,8 @@ kind: Job
 metadata: 
   name: job-pod
 spec:
+  completions: 3
+  pararelism: 3
   template:
     spec: 
       containers:
